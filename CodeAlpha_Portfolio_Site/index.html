@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <nav>
+        <a href="#" class="logo"><span>Portfolio</span></a>
+        <ul class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </ul>
+        <i class='bx bx-menu-alt-right' id="menu"></i>    
+    </nav>
+    <section id="home">
+        <div class="info-box">
+            <h1>Hi, I'm<span> Yogita Raut</span>.</h1>
+            <p>A passionate Frontend Developer building beautiful and responsive web applications.</p>
+        </div>
+        <div class="btn-box">
+            <button class="btn">Download Resume</button>
+        </div>
+    </section>
+    <section id="about">
+        <h4 class="header reveal"><span>About Me</span></h4>
+        <div class="about-info reveal">   
+             <p>I am a Frontend Developer with a passion for creating elegant and efficient user interfaces. With a strong foundation in HTML, CSS, and JavaScript, I enjoy turning ideas into reality through clean and semantic code.</p><br>
+             <p>My goal is to build exceptional digital experiences that are not only visually stunning but also highly functional and accessible.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h4 class="header reveal"><span>Skills</span></h4>
+        <div class="skills-info reveal">
+            <ul>
+                <li>
+                    <span><i class='bx bx-chevron-right'></i> HTML</span>
+                </li>
+                 <li>
+                    <span><i class='bx bx-chevron-right'></i> CSS</span>
+                </li>
+                <li>
+                    <span><i class='bx bx-chevron-right'></i> Bootstrap</span>
+                </li>
+                 <li>
+                    <span><i class='bx bx-chevron-right'></i> JavaScript</span>
+                </li>
+                 <li>
+                    <span><i class='bx bx-chevron-right'></i> React.js</span>
+                </li>
+                 <li>
+                    <span><i class='bx bx-chevron-right'></i> PHP</span>
+                </li>
+                 <li>
+                    <span><i class='bx bx-chevron-right'></i> Java</span>
+                </li>
+                 <li>
+                    <span><i class='bx bx-chevron-right'></i> Python</span>
+                </li>
+                 <li>
+                    <span><i class='bx bx-chevron-right'></i> MySQL</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <h4 class="header reveal"><span>Projects</span></h4>
+        <div class="projects-container">
+            <div class="box">
+                <div class="img-box">
+                <img src="weather_app.png" alt="">
+                </div>
+                <h5><span>Weather App</span></h5>
+                <p>Weather App is a responsive web application that displays real-time weather details for any city using live API data.<br>
+                <span class="tech">Tech Stack:</span> HTML, CSS, JavaScript, OpenWeather API</p>
+                <div class="button-box">
+                <button class="button">Source Code</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="img-box">
+                <img src="image_gallery.png" alt="">
+                </div>
+                <h5><span>Image Gallery</span></h5>
+                <p>Image Gallery is a responsive web application that displays images in a gallery layout where users can view, navigate and preview images easily.<br>
+                <span class="tech">Tech Stack:</span> HTML, CSS, JavaScript</p>
+                <div class="button-box">
+                <button class="button">Source Code</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="img-box">
+                <img src="calculator.png" alt="">
+                </div>
+                <h5><span>Calculator</span></h5>
+                <p>A simple calculator web application that performs basic arithmetic operations such as addition, subtraction, multiplication and division.<br>
+                <span class="tech">Tech Stack:</span> HTML, CSS, JavaScript</p>
+                <div class="button-box">
+                <button class="button">Source Code</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h4 class="header reveal"><span>Contact</span></h4>
+        <div class="contact-icon reveal">
+                <ul>
+                    <li>
+                       <span><i class="fa-solid fa-envelope"></i>yogitaraut0311@gmail.com</span><br>
+                       <span class="icon"><i class="fa-brands fa-linkedin"></i>+91 2222222222</span><br>
+                       <span><i class="fa-brands fa-github"></i>+91 2222222222</span>
+                    </li>
+                </ul>   
+        </div>          
+    </section>
+    <script src="script.js"></script>  
+</body>
+</html>

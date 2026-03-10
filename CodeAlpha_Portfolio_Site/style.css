@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', calibri;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(48,48,48);
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.3em 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1.80em;
+    font-size: 1em;
+}
+nav ul a{
+    color: white;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+nav ul a:hover{
+    opacity: 1;
+}
+.logo{
+    font-size: 1.70em;
+    color: white;
+    font-weight: 800;
+    letter-spacing: -0.50px;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+span{
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    background-clip: text;
+    color: transparent;
+}
+#menu{
+    color: white;
+    font-size: 3em;
+    display: none;
+}
+section{
+    padding: 1% 12%;
+    scroll-margin-top: 50px;
+}
+#home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4em;
+    gap: 1.60em;
+    color: white;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 850px; 
+}
+.info-box h1{
+    font-size: 3.5em;
+    font-weight: 1000;
+    letter-spacing: -1.5px;
+}
+.info-box p{
+    opacity: 0.7;
+    font-size: 1.40em;
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn{
+    padding: 0.5em 1.2em;
+    color: rgb(24,24,24);
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: -0.40px;
+    border-radius: 0.5em;
+    font-size: 1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;  
+}
+.btn-box .btn:hover{
+    color: white;
+    background-color: rgb(24,24,24);
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: rgb(48,48,48);
+} 
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+}
+#about{
+    min-height: 80vh;
+    background-color: rgb(21,21,21);
+}
+.about-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0em;
+}
+.about-info p{
+    color: white;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 1.16em;
+}
+#skills{
+    min-height: 75vh;
+}
+.header{
+    text-align: center;
+    font-size: 2.30em;
+    font-weight: 800;
+    margin: 1.30em 0;
+    margin-bottom: 27px;
+}
+.skills-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+}
+.skills-info ul{
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em 7em;
+    align-items: baseline;
+}
+.skills-info ul li span{
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.2em;
+    color: white;
+    transition: 0.3s ease-in-out;
+}    
+.skills-info ul li span:hover{
+    transform: translateX(10px);
+}
+.skills-info ul li i{
+    font-size: 1.3em;
+    color: white;
+}
+#projects{
+    min-height: 110vh;
+    background-color: rgb(21,21,21);
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
+    gap: 1.85em;
+}
+.box{
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 1.5s ease-in-out;
+}
+.box:hover{
+    transform: scale(1.04);
+}
+.box p{
+    color: white;
+    opacity: 0.7;
+    padding-left: 1.55em;
+    padding-right: 1.55em;
+    gap: 2em;
+    padding-top: 4px;
+    font-size: 1em;
+}
+.box h5 span{
+    font-size: 1.65em;
+    padding-left: 1.10em;
+    padding-right: 1.10em;
+    color: white;
+    gap: 2em;
+}
+.box .tech{
+    color: white;
+}
+.button-box{
+    display: flex;
+    gap: 1em;
+    padding-left: 26px;
+    padding-top: 18px;
+    padding-bottom: 24px;
+}
+.button-box .button{
+    padding: 0.3em 1em;
+    color: rgb(24,24,24);
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: -0.40px;
+    border-radius: 25px;
+    font-size: 1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;  
+}
+.button-box .button:hover{
+    color: white;
+    background-color: rgb(24,24,24);
+}
+.img-box{
+    width: 100%;
+    height: 280px;
+    padding-bottom: 15px;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+#contact{
+    min-height: 97vh;
+}
+.contact-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+}
+.contact-icon ul li span{
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    font-size: 1.3em;
+    color: white;
+}
+.contact-icon ul li i{
+    font-size: 22px;
+    color: white;
+    opacity: 0.6;
+}
+.contact-icon ul li .icon i{
+    font-size: 26px;
+    color: white;
+    opacity: 0.6;
+}
+.contact-icon ul li a{
+    color: white;
+    text-decoration:none;
+}
+.reveal { 
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2.3s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media(max-width:767px){
+    section{
+        padding: 1em 5%;
+}
+    nav .btn{
+        display: none;
+}
+    #menu{
+        display: block;
+        font-size: 37px;
+}
+    .links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1em 3em;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+}
+    .links a {
+        margin: 2em 0;
+        display: block;
+        font-size: 1.20em;
+        color: white;
+}
+    .links.active {
+        display: block;
+}
+    #home h1{
+        font-size: 3.2em;
+}
+    #home p{
+        font-size: 1.28em;  
+}
+    #about p{
+        font-size: 1.13em;
+}
+}
+
+@media(max-width:639px){
+    section{
+        padding: 1em 12%;
+}
+    nav .logo{
+        font-size: 1.56em;
+}
+    #menu{
+        display: block;
+        font-size: 35px;
+}
+    .links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1em 3em;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+}
+    .links a {
+        margin: 2em 0;
+        display: block;
+        font-size: 1.18em;
+        color: white;
+}
+    #home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4em;
+    gap: 1.15em;
+}
+    #home .info-box{
+        gap: 0.3em;
+}
+    #home h1{
+        font-size: 2.45em;
+}
+    #home p{
+        font-size: 1.21em;  
+}
+    section .header{
+    font-size: 2em;
+    margin-bottom: 28px;
+}
+    #about p{
+        font-size: 1.1em;
+}
+    #skills ul li span{
+        font-size: 1.15em;
+}
+    #skills ul li i{
+        font-size: 1.27em;
+}
+    #contact ul li span{
+        font-size: 1.2em;
+}
+    #projects p{
+        font-size: 0.97em;
+}
+    #projects h5 span{
+    font-size: 1.60em;
+}
+    #contact ul li i{
+        font-size: 21px;
+}
+    #contact ul li .icon i{
+        font-size: 25px;
+}
+}
+
+@media(max-width:1310px){
+    section{
+        padding: 1% 4%;
+}
+}
